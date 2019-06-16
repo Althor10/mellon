@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: application/json');
 require_once "../../config/connection.php";
-include "functions.php";
+include "functionsAdmin.php";
 
-$rezultat = executeQuery(getCategories());
+$rezultat = executeQuery(getPostsTable());
 echo json_encode($rezultat);
